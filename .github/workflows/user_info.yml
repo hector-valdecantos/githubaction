@@ -14,4 +14,4 @@ jobs:
     steps:
       - name: get user info
         run: |
-          echo github.event.pusher.name
+          echo ${{github.event.pusher.name}}
