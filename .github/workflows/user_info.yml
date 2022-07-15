@@ -16,6 +16,6 @@ jobs:
         run: |
           echo ${{github.event.pusher.name}}
       - name: condition on user name
-        if: github.event.pusher.name == "hvaldecantos" || github.event.pusher.name == "hector-valdecantos"
+        if: github.event.pusher.name == 'hvaldecantos' || github.event.pusher.name == 'hector-valdecantos'
         run: |
           echo "OK"
