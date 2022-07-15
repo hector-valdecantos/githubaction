@@ -1,0 +1,15 @@
+name: get user info
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  userinfo:
+    steps:
+      - run: |
+        echo github.event.pusher.name
