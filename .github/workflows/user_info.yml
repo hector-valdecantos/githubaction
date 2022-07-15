@@ -10,6 +10,7 @@ on:
 
 jobs:
   userinfo:
+    runs-on: ubuntu-latest
     steps:
       - name: get user info
         run: |
