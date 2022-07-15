@@ -11,5 +11,6 @@ on:
 jobs:
   userinfo:
     steps:
-      - run: |
-        echo github.event.pusher.name
+      - name: get user info
+        run: |
+          echo github.event.pusher.name
