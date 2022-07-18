@@ -18,7 +18,7 @@ jobs:
       - name: condition on user name
         if: |
           github.event_name == 'push' &&
-          github.event.pusher.name != 'hvaldecantoss' &&
-          github.event.pusher.name != 'hector-valdecantos'
+          github.event.pusher.name != 'hvaldecantos' &&
+          github.event.pusher.name != 'hector-valdecantoss'
         run: |
           echo "OK"
